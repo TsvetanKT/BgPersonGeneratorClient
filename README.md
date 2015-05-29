@@ -20,4 +20,4 @@ An AngularJS SPA Client for BgPeopleWebApi's services.
 ![Generate people view](https://raw.githubusercontent.com/TsvetanKT/BgPersonGeneratorClient/master/ReadmeViews/Generate.png "Generate people view")
 
 *	Edit person view:<br>
-![Edit person view](https://raw.githubusercontent.com/TsvetanKT/BgPersonGeneratorClient/master/ReadmeViews/Generate.png "Edit person view")
+![Edit person view](https://raw.githubusercontent.com/TsvetanKT/BgPersonGeneratorClient/master/ReadmeViews/Edit.png "Edit person view")
