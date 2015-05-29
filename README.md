@@ -1,6 +1,6 @@
 BgPersonGeneratorClient
 =======================
-An AngularJS SPA Client for BgPeopleWebApi's services.
+An AngularJS SPA Client for BgPeopleWebApi's services.<br>
 All people data is randomly generated with [BgPersonGenerator](https://github.com/TsvetanKT/BgPersonGenerator).
 
 
