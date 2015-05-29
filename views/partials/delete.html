@@ -1,0 +1,19 @@
+<div class="container">
+    <form name="deletePeopleForm" class="form-horizontal well">
+        <fieldset>
+            <legend>Delete all</legend>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <label for="accept">Delete all people: </label>
+                    <input id="accept" type="checkbox" ng-model="accepted">
+                </div>
+            </div>
+            <div class="pull-right">
+                <button ng-click="deleteAll()" ng-disabled="!accepted" class="btn btn-primary">
+                    Delete All
+                </button>
+                <a href="#/" class="btn btn-primary">Cancel</a>
+            </div>
+        </fieldset>
+    </form>
+</div>

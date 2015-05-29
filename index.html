@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bg Person Generator</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../css/toastr.min.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body ng-app="myApp" ng-cloak>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#/" class="navbar-brand">Bg Person Generator</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/create">Create one</a>
+                    </li>
+                    <li>
+                        <a href="#/generate">Generate many</a>
+                    </li>
+                    <li>
+                        <a href="#/deleteAll">Delete all</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div ng-view>
+    </div>
+    <hr />
+    <footer class="text-center" ng-cloak>
+        Author: <a href="https://github.com/TsvetanKT" target="_blank"><strong>TsvetanKT</strong></a>
+    </footer>
+    <hr />
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/toastr/toastr.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-resource.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-cookies.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/CreateCtrl.js"></script>
+    <script src="js/controllers/GenerateCtrl.js"></script>
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/EditCtrl.js"></script>
+    <script src="js/controllers/DeleteCtrl.js"></script>
+    <script src="js/services/notifier.js"></script>
+    <script src="js/services/currentPerson.js"></script>
+    <script src="js/services/resources/PeopleResource.js"></script>
+    <script src="js/services/resources/CreatePersonResource.js"></script>
+    <script src="js/services/resources/GeneratePeopleResource.js"></script>
+    <script src="js/services/resources/EditPersonResource.js"></script>
+    <script src="js/services/resources/DeletePersonResource.js"></script>
+    <script src="js/services/resources/DeleteAllPeopleResource.js"></script>
+    <script src="js/directives/People.js"></script>
+</body>
+
+</html>

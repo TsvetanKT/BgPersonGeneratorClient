@@ -1,0 +1,60 @@
+<table class="table table-bordered table-striped">
+    <tr>
+        <th class="text-center">
+            ID
+        </th>
+        <th class="text-center">
+            First Name
+        </th>
+        <th class="text-center">
+            Middle Name
+        </th>
+        <th class="text-center">
+            Last Name
+        </th>
+        <th class="text-center">
+            Gender
+        </th>
+        <th class="text-center">
+            Date of birth
+        </th>
+        <th class="text-center">
+            City
+        </th>
+        <th class="text-center">
+            Phone number
+        </th>
+        <th class="text-center">
+            EGN/Personal number
+        </th>
+    </tr>
+    <tr ng-repeat="p in filtered = (people |orderBy: sort : reverse | filter : search)">
+        <td class="text-center">
+            <a ng-click="setCurrent(p.Id)" href="">{{p.Id}}</a>
+        </td>
+        <td class="text-center">
+            {{p.FirstName}}
+        </td>
+        <td class="text-center">
+            {{p.MiddleName}}
+        </td>
+        <td class="text-center">
+            {{p.LastName}}
+        </td>
+        <td class="text-center">
+            {{p.IsMale === true ? 'Male' : 'Female'}}
+        </td>
+        <td class="text-center">
+            {{p.BirthDay | date:'yyyy-MM-dd'}}
+        </td>
+        <td class="text-center">
+            {{p.City}}
+        </td>
+        <td class="text-center">
+            {{p.PhoneNumber}}
+        </td>
+        <td class="text-center">
+            {{p.EGN}}
+        </td>
+    </tr>
+</table>

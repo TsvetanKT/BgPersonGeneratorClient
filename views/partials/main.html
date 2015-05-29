@@ -1,0 +1,83 @@
+<div class="container">
+    <h2 class="text-center">
+        People
+    </h2>
+    <div>
+        <div class="row">
+            <div class="col-md-2">
+                <p class="text-center">Sort</p>
+                <select class="form-control" ng-model="sort">
+                    <option value="" selected="selected">None</option>
+                    <option value="Id">ID</option>
+                    <option value="FirstName">First name</option>
+                    <option value="MiddleName">Middle name</option>
+                    <option value="LastName">Last name</option>
+                    <option value="IsMale">Gender</option>
+                    <option value="BirthDay">Birthday</option>
+                    <option value="City">City</option>
+                    <option value="PhoneNumber">Phone number</option>
+                    <option value="EGN">EGN/Personal number</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">Order</p>
+                <select class="form-control" ng-model="reverse">
+                    <option value="" selected="selected">Ascending</option>
+                    <option value="true">Descending</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">ID</p>
+                <input id="Id" placeholder="ID search" class="form-control" type="text" ng-model="search.Id" />
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">First name</p>
+                <input id="FirstName" placeholder="First name search" class="form-control" type="text" ng-model="search.FirstName" />
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">Middle name</p>
+                <input id="MiddleName" placeholder="Middle name search" class="form-control" type="text" ng-model="search.MiddleName" />
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">Last name</p>
+                <input id="LastName" placeholder="Last name search" class="form-control" type="text" ng-model="search.LastName" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-2">
+                <p class="text-center">Gender</p>
+                <select class="form-control" ng-model="search.IsMale">
+                    <option value="" selected="selected">Not specified</option>
+                    <option value="true">Male</option>
+                    <option value="false">Female</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">Birthday</p>
+                <input id="birthday" type="datetime" date-picker placeholder="yyyy-MM-dd" ng-model="search.BirthDay" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">City</p>
+                <input id="City" placeholder="City search" class="form-control" type="text" ng-model="search.City" />
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">Phone number</p>
+                <input id="PhoneNumber" placeholder="Phone number search" class="form-control" type="text" ng-model="search.PhoneNumber" />
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">EGN/Personal number</p>
+                <input id="EGN" placeholder="EGN/Personal number" class="form-control" type="text" ng-model="search.EGN" />
+            </div>
+            <div class="col-md-2">
+                <p class="text-center" style="margin:27px">Showing <strong>{{(people |orderBy: sort : reverse | filter : search).length}}</strong> people</p>
+            </div>
+        </div>
+        <br />
+    </div>
+    <br />
+    <div people ng-if="people.length" />
+    <div ng-if="!people.length">
+        <h2 class="text-center">No results!</h2>
+    </div>
+</div>

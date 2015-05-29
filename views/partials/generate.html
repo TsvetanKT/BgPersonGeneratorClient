@@ -1,0 +1,49 @@
+<div class="container">
+    <form name="generatePeopleForm" class="form-horizontal well">
+        <fieldset>
+            <legend>Generate many people</legend>
+            <div class="form-group">
+                <label for="numberOfPeople" class="col-md-2 control-label">Total Number</label>
+                <div class="col-md-10">
+                    <input id="numberOfPeople" type="number" ng-model="generateData.numberOfPeople" ng-init="generateData.numberOfPeople=10" min="1" max="100000" required="required" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="language" class="col-md-2 control-label">Language</label>
+                <div class="col-md-10">
+                    <select id="language" class="form-control" ng-model="generateData.language">
+                        <option value="" selected="selected">Bulgarian (Български)</option>
+                        <option value="true">English (Английски)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="minAge" class="col-md-2 control-label">Min Age</label>
+                <div class="col-md-10">
+                    <input id="minAge" type="number" ng-model="generateData.minAge" min="0" max="150" value="1" ng-init="generateData.minAge=1" required="required" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="maxAge" class="col-md-2 control-label">Max Age</label>
+                <div class="col-md-10">
+                    <input id="maxAge" type="number" ng-model="generateData.maxAge" min="0" max="150" value="100" ng-init="generateData.maxAge=100" required="required" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="unique" class="col-md-2 control-label">Unique</label>
+                <div class="col-md-10">
+                    <select id="unique" class="form-control" ng-model="generateData.unique">
+                        <option value="" selected="selected">No</option>
+                        <option value="true">Unique Phone numbers and EGNs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pull-right">
+                <button ng-click="generatePeople(generateData)" ng-disabled="generatePeopleForm.$invalid || generateData.minAge > generateData.maxAge" class="btn btn-primary">
+                    Generate
+                </button>
+                <a href="#/" class="btn btn-primary">Cancel</a>
+            </div>
+        </fieldset>
+    </form>
+</div>

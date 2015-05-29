@@ -1,0 +1,66 @@
+<div class="container">
+    <form name="editPersonForm" class="form-horizontal well" novalidate>
+        <fieldset>
+            <legend>Edit Person</legend>
+            <div class="form-group">
+                <label for="firstName" class="col-md-2 control-label">First Name</label>
+                <div class="col-md-10">
+                    <input id="firstName" type="text" pattern=".{2,}" required title="2 characters minimum" placeholder="2 characters minimum" ng-model="currentPerson.FirstName" required="required" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="middleName" class="col-md-2 control-label">Middle Name</label>
+                <div class="col-md-10">
+                    <input id="middleName" type="text" ng-model="currentPerson.MiddleName" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="col-md-2 control-label">Last Name</label>
+                <div class="col-md-10">
+                    <input id="lastName" type="text" pattern=".{2,}" required title="2 characters minimum" placeholder="2 characters minimum" ng-model="currentPerson.LastName" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="col-md-2 control-label">Gender</label>
+                <div class="col-md-10">
+                    <select id="gender" class="form-control" ng-model="currentPerson.IsMale">
+                        <option ng-repeat="g in genders" value="{{g.value}}" ng-selected="currentPerson.IsMale==={{g.value}}">{{g.name}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birthday" class="col-md-2 control-label">Date of birth</label>
+                <div class="col-md-10">
+                    <input id="birthday" type="datetime" ng-model="currentPerson.BirthDay" date-picker placeholder="yyyy-MM-dd" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city" class="col-md-2 control-label">City</label>
+                <div class="col-md-10">
+                    <input id="city" type="text" ng-model="currentPerson.City" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="col-md-2 control-label">Phone number</label>
+                <div class="col-md-10">
+                    <input id="phone" type="text" ng-model="currentPerson.PhoneNumber" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="egn" class="col-md-2 control-label">EGN/Personal number</label>
+                <div class="col-md-10">
+                    <input id="egn" type="text" ng-model="currentPerson.EGN" class="form-control" />
+                </div>
+            </div>
+            <div class="pull-right">
+                <button ng-click="deletePerson(currentPerson.egn)" class="btn btn-danger">
+                    Delete
+                </button>
+                <button name="deleteButton" ng-click="editPerson(currentPerson)" ng-disabled="editPersonForm.$invalid" class="btn btn-primary">
+                    Edit
+                </button>
+                <a href="#/" class="btn btn-primary">Cancel</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
