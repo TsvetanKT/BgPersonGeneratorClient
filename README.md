@@ -1,11 +1,12 @@
 BgPersonGeneratorClient
 =======================
 An AngularJS SPA Client for BgPeopleWebApi's services.
+All people data is randomly generated with [BgPersonGenerator](https://github.com/TsvetanKT/BgPersonGenerator).
 
 
 ### To run:
 *	Run [BgPeopleWebApi](https://github.com/TsvetanKT/BgPeopleWebApi).
-*	Start run.bat if you have Node.js or run the clien through Visual Studio, NetBeans etc.
+*	Start `run.bat` if you have **Node.js** or run the clien through Visual Studio, NetBeans etc.
 *	Open it in the browser (for run.bat default adress is `http://localhost:3333/`, you can change the port in `web-server.js`).
 
 
