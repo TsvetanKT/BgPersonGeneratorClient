@@ -63,11 +63,11 @@
             </div>
             <div class="col-md-2">
                 <p class="text-center">Phone number</p>
-                <input id="PhoneNumber" placeholder="Phone number search" class="form-control" type="text" ng-model="search.PhoneNumber" />
+                <input id="PhoneNumber" placeholder="Phone search" class="form-control" type="text" ng-model="search.PhoneNumber" />
             </div>
             <div class="col-md-2">
                 <p class="text-center">EGN/Personal number</p>
-                <input id="EGN" placeholder="EGN/Personal number" class="form-control" type="text" ng-model="search.EGN" />
+                <input id="EGN" placeholder="EGN/PN search" class="form-control" type="text" ng-model="search.EGN" />
             </div>
             <div class="col-md-2">
                 <p class="text-center" style="margin:27px">Showing <strong>{{(people |orderBy: sort : reverse | filter : search).length}}</strong> people</p>
