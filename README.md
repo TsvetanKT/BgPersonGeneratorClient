@@ -10,14 +10,14 @@ An AngularJS SPA Client for BgPeopleWebApi's services.
 
 
 ### Views:
-*	Home view:
-![Home view](https://github.com/TsvetanKT/BgPersonGeneratorClient/tree/master/ReadmeViews/Home.png "Home view")
+*	Home view:<br>
+![Home view](https://raw.githubusercontent.com/TsvetanKT/BgPersonGeneratorClient/master/ReadmeViews/Home.png "Home view")
 
-*	Create person view:
-![Create person view](https://github.com/TsvetanKT/BgPersonGeneratorClient/tree/master/ReadmeViews/Create.png "Create person view")
+*	Create person view:<br>
+![Create person view](https://raw.githubusercontent.com/TsvetanKT/BgPersonGeneratorClient/master/ReadmeViews/Create.png "Create person view")
 
-*	Generate people view:
-![Generate people view](https://github.com/TsvetanKT/BgPersonGeneratorClient/tree/master/ReadmeViews/Generate.png "Generate people view")
+*	Generate people view:<br>
+![Generate people view](https://raw.githubusercontent.com/TsvetanKT/BgPersonGeneratorClient/master/ReadmeViews/Generate.png "Generate people view")
 
-*	Edit person view:
-![Edit person view](https://github.com/TsvetanKT/BgPersonGeneratorClient/tree/master/ReadmeViews/Generate.png "Edit person view")
+*	Edit person view:<br>
+![Edit person view](https://raw.githubusercontent.com/TsvetanKT/BgPersonGeneratorClient/master/ReadmeViews/Generate.png "Edit person view")
